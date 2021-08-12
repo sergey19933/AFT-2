@@ -21,7 +21,7 @@ public class ParameterizedTest extends BaseParamTests {
 
     @DisplayName("Запуск параметризированного тестового сценария")
     @org.junit.jupiter.params.ParameterizedTest
-    @ValueSource(strings = {"Пушкин Антон Васильевич","Вишнев Максим Антонович","Крупин Евгений Максимович"})
+    @ValueSource(strings = {"Аверин Антон Васильевич","Вишнев Максим Антонович","Крупин Евгений Максимович"})
     public void testScenario(String name) {
         String chooseMortgageXPath = "//a[@class='main-menu__link'][contains(text(),'Ипотека')]";
         WebElement chooseMortgage = driver.findElement(By.xpath(chooseMortgageXPath));
@@ -32,7 +32,6 @@ public class ParameterizedTest extends BaseParamTests {
         /**
          * Заходим в под- пункт меню "рефинансирование"
          */
-
         String chooseRefinancingXPath = "//a[@href='/retail/mortgageloans/refinansirovanie-kreditov-inyh-bankov/']";
         WebElement chooseRefinancing = driver.findElement(By.xpath(chooseRefinancingXPath));
         waitUtilElementToBeClickable(chooseRefinancing);

@@ -11,8 +11,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.serg.test.base.BaseTests;
 
 public class OrdinaryTest extends BaseTests {
-
-
     /**
      * Заходим на страницу "ипотека"
      * Проверить что находимся именно на этой странице
